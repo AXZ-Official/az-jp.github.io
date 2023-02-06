@@ -18,15 +18,15 @@ const Home: FC = () => (
       <Box>
         <Grid container spacing={4}>
           <Grid item sm={6}>
-            <Typography variant='h5' component='h2'>AARRとは？</Typography>
+            <Typography variant='h5' component='h2'>Azとは？</Typography>
             <Typography color='text.secondary'>
-              AARR（Accurate And Revelatory Reporter）は、ボランティアによる洗練されたスキルやツールで、Discordのトラブルやネットいじめを正確に通報する団体です。
+              Azは、病んでる人の居場所です。
               <br />
-              2021年に荒らし連合から派生しました。
+              2023年に誕生しました。
             </Typography>
           </Grid>
           <Grid item sm={6}>
-            <Typography variant='h5' component='h2'>実績</Typography>
+            <Typography variant='h5' component='h2'>鯖主のDiscordサーバー凍結実績</Typography>
             <Box
               component='ul'
               sx={{
@@ -35,9 +35,9 @@ const Home: FC = () => (
               }}
             >
               {[
-                '大手ショップのRShopを10日連続停止。',
-                'GhostHaxなどの大規模荒らしサーバーの停止。',
-                '悪意のあるサーバーを停止した数は数十件以上。'
+                '第五人格の公式サーバーの凍結',
+                'GhostHaxや2b2t.jpなどの大規模荒らしサーバーの凍結',
+                '他にもまだまだ実績はありますが、書ききれないのでこの辺で。'
               ].map(v => (
                 <li key={v}><Typography color='text.secondary'>{v}</Typography></li>
               ))}
@@ -48,7 +48,7 @@ const Home: FC = () => (
               <Box>
                 <Typography variant='h5' component='h2'>コミュニティ</Typography>
                 <Typography color='text.secondary'>
-                  AARRはあなたの参加を待っています。
+                  Azはあなたの参加を待っています。
                   <br />
                   下記リンクのページからできます。
                 </Typography>
@@ -68,7 +68,7 @@ const Home: FC = () => (
           <Grid item sm={6}>
             <Stack spacing={2} alignItems='flex-start'>
               <Box>
-                <Typography component='h2' variant='h6'>AARRのシンボルマーク</Typography>
+                <Typography component='h2' variant='h6'>Azのシンボルマーク</Typography>
                 <Box
                   alt=''
                   component='img'
