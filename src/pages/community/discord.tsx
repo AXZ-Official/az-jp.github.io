@@ -22,7 +22,7 @@ const DiscordPage: FC = () => {
     <>
       <Seo
         title='Discordコミュニティ'
-        description='AARRのDiscordに参加しよう。'
+        description='AzのDiscordに参加しよう。'
       />
       <Snackbar
         onClose={() => setDiscordInviteCopyStatus(undefined)}
@@ -72,19 +72,17 @@ const DiscordPage: FC = () => {
             <Box>
               <Typography fontWeight='bold'>コミュニティに参加する前に少し待ってください🤚</Typography>
               <br />
-              サーバーにはNSFWコンテンツを共有するためのチャンネルがいくつかありますが、
-              <Typography component='span' fontWeight='bold'>完全な</Typography>
-              エロサーバーではありません。
+              サーバーには沢山の人がいます。
               <br />
-              AARRのDiscordコミュニティであり、ただ雑談がしたいだけの人もいます。
+              AzはDiscordのコミュニティであり、Discordの規約を守る必要があります。
               <br />
-              お互い不快な思いをしないように、NSFWコンテンツを共有する際は次の項目を守ってください。
+              お互い不快な思いをしないように、サーバーに参加する際は次の項目を守ってください。
               <br />
               また、ガイドラインは事前の告知なしで変更する可能性があります。
             </Box>
           </Stack>
           <Stack spacing={2}>
-            <Typography color='text.secondary'>最終更新日：2022年10月24日</Typography>
+            <Typography color='text.secondary'>最終更新日：202年2月6日</Typography>
             <Box
               component='ul'
               sx={{
@@ -96,14 +94,15 @@ const DiscordPage: FC = () => {
               }}
             >
               {[
-                { title: 'Discordが表示できるファイルの形式で共有しましょう。' },
+                { title: 'スパム行為や、荒らし行為をしてはいけません。' },
+                { title: '個人情報を投稿してはいけません。'},
+                { title: "金銭のやり取りをしてはいけません。"},
                 {
-                  description: 'これは内容によっては三次元では違法性があるためです。',
-                  title: '二次元のみで、三次元のコンテンツを共有してはいけません。'
+                  description: '2次元であっても児童を性的に描写したコンテンツは共有してはいけません。',
+                  title: '児童を性的に扱うコンテンツを共有してはいけません。'
                 },
-                { title: 'ゴア表現（流血など）や排泄物を含むコンテンツを共有してはいけません。' },
-                { title: 'NSFWコンテンツをNSFWとしてマークされた専用のチャンネル以外で共有してはいけません。' },
-                { title: '二次元であっても児童を性的に描写したコンテンツを共有してはいけません。' }
+                { title: 'グロテスク（例:流血など)を含むコンテンツを投稿してはいけません。' },
+                { title: 'NSFWコンテンツをNSFWとしてマークされた専用のチャンネル以外で共有してはいけません。' }
               ].map(({ title, description }) => (
                 <li key={title}>
                   <Typography fontWeight='bold'>{title}</Typography>
@@ -130,15 +129,23 @@ const DiscordPage: FC = () => {
 
                 {
                   description: '絵そのものや絵を使用したアニメーションなどです。',
-                  term: '二次元'
+                  term: '2次元'
                 },
                 {
-                  description: '実際のものを記録した写真や映像などです。\nこれには三次元のコンテンツを編集などで二次元にしたものや、見分けがつかないほどに三次元に近い二次元も含まれます。',
-                  term: '三次元'
+                  description: '実際のものを記録した写真や映像などです。\nこれには3次元のコンテンツを編集などで2次元にしたものや、見分けがつかないほどに三次元に近い二次元も含まれます。',
+                  term: '3次元'
                 },
                 {
                   description: '一般的に言われる児童そのものや、人間でないもの（ケモノなど）の児童も含みます。',
                   term: '児童'
+                },
+                {
+                  description: 'メールアドレスや電話番号なども含みます。',
+                  term: '個人情報'
+                },
+                {
+                  description: '現実のマネーを使用した取引などのを指す\n例:アカウント販売',
+                  term: '金銭のやり取り'
                 }
               ].map(({ term, description }) => (
                 <li key={term}>
