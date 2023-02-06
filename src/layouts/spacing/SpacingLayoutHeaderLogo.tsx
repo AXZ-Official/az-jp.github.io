@@ -21,7 +21,7 @@ const SpacingLayoutHeaderLogo: FC = () => {
             component='h1'
             color={palette.text.primary}
           >
-            AARR
+            Az
           </Typography>
         </MuiLink>
       </NextLink>
