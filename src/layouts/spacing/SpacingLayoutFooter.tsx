@@ -23,7 +23,7 @@ const SpacingLayoutFooter: FC = () => (
     <footer>
       <Spacer>
         <Stack direction='row' spacing={2}>
-          <Typography fontSize='small' color='text.secondary'>© aarr-jp 2021</Typography>
+          <Typography fontSize='small' color='text.secondary'>© Az-jp 2021</Typography>
           <NextLink
             passHref
             href='/legal/privacy-policy/'
