@@ -21,7 +21,7 @@ const GalleryPage: FC = () => (
       </Typography>
       <Stack spacing={4}>
         <ImgurImageShowcase
-          title='AARRのDiscordサーバーアイコン'
+          title='AzのDiscordサーバーアイコン'
           images={[
             {
               ext: '.png',
@@ -37,7 +37,7 @@ const GalleryPage: FC = () => (
           ]}
         />
         <ImgurImageShowcase
-          title='AARRのDiscordサーバーバナー'
+          title='AzのDiscordサーバーバナー'
           images={[
             {
               deviceWarning: true,
