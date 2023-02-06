@@ -34,6 +34,8 @@ rules:
           multiline:
             delimiter: semi
             requireLast: true
+            "quotes": 
+            [2, "single", { "avoidEscape": true }]
   "@typescript-eslint/semi":
     - error
     - always
