@@ -1,0 +1,9 @@
+# Next.js
+.next/
+out/
+sitemap*.xml
+next-env.d.ts
+
+# Node.js
+node_modules/
+package-lock.json
